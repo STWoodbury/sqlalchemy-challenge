@@ -1,18 +1,18 @@
 # SQLALCHEMY Challenge
 
 ## Overview
-This repository examines climate data from measurement stations around Hawaii. It utilizes sqlalchemy and sqlite to analyze the data from the database (Hawaii.sqlite)[Resources/hawaii.sqlite]. It then takes the data, and creates an API with Flask to serve various queries to the end user.  
+This repository examines climate data from measurement stations around Hawaii. It utilizes sqlalchemy and sqlite to analyze the data from the database (Hawaii.sqlite)["SurfsUpResources/hawaii.sqlite"]. It then takes the data, and creates an API with Flask to serve various queries to the end user.  
 
 This database contains two tables:
 
 <ul>
-<li><a href="Resources/hawaii_stations.csv">hawaii_stations:</a> outlies each of the 9 measurement stations by station id, name, latitude, longitde, and elevation, with the dataset</li>
-<li><a href="Resources/hawaii_measurements.csv">hawaii_measurements:</a> contains measurements from all stations and lists the date, precipitation(in inches) and temperature (in degrees F) of each measurement</li>
+<li><a href="SurfsUp/Resources/hawaii_stations.csv">hawaii_stations:</a> outlies each of the 9 measurement stations by station id, name, latitude, longitde, and elevation, with the dataset</li>
+<li><a href="SurfsUp/Resources/hawaii_measurements.csv">hawaii_measurements:</a> contains measurements from all stations and lists the date, precipitation(in inches) and temperature (in degrees F) of each measurement</li>
 </ul>
 
 ## Part 1 -- Climate and Station Analysis:
 
-This section uses SqlAlchemy to analyze the above database. The code can be found in the file: (climate_analysis)['climate_analysis.ipynb].
+This section uses SqlAlchemy to analyze the above database. The code can be found in the file: (climate_analysis)['SurfsUp/climate_analysis.ipynb].
 
 ### Climate Data Analysis
 
@@ -23,23 +23,11 @@ In the above file, the data is first analyzed for climate data. First, an sqlalc
     <li>What are the precipitation measurements for the most recent 12 month period?</li>
 </ol>
 
-This precipitation data was then converted to a pandas dataframe, and charted. The resulting chart can be found in (precipitation_chart)['visualizations/precipitation_chart.png']
+This precipitation data was then converted to a pandas dataframe, and charted. The resulting chart can be found in (precipitation_chart)['SurfsUp/visualizations/precipitation_chart.png']
 
 This dataframe was also summarized in the following table:
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
