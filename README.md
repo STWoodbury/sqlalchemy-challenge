@@ -12,7 +12,7 @@ This database contains two tables:
 
 ## Part 1 -- Climate and Station Analysis:
 
-This section uses SqlAlchemy to analyze the above database. The code can be found in the file: (climate_analysis)["SurfsUp/climate_analysis.ipynb"].
+This section uses SqlAlchemy to analyze the above database. The code can be found in the file: [climate_analysis](SurfsUp/climate_analysis.ipynb).
 
 ### Climate Data Analysis
 
@@ -23,7 +23,7 @@ In the above file, the data is first analyzed for climate data. First, an sqlalc
     <li>What are the precipitation measurements for the most recent 12 month period?</li>
 </ol>
 
-This precipitation data was then converted to a pandas dataframe, and charted. The resulting chart can be found in (precipitation_chart)['SurfsUp/visualizations/precipitation_chart.png']
+This precipitation data was then converted to a pandas dataframe, and charted. The resulting chart can be found in [precipitation_chart](SurfsUp/visualizations/precipitation_chart.png)
 
 This dataframe was also summarized in the following table:
 
@@ -89,11 +89,11 @@ Based on the most active station from the above query, the following queries wer
     <li>What are the temperatures for the most recent 12 months?</li>
 </ol>
 
-A histogram was then created from the 12 month temperature data. This histogram can be found in the (temp_distribution)['SurfsUp/visualizations/temp_distribution.png'] file.
+A histogram was then created from the 12 month temperature data. This histogram can be found in the [temp_distribution](SurfsUp/visualizations/temp_distribution.png) file.
 
 ## Part 2: Climate App
 
-In this section a Flask API was designed based on the previous queries in section 1. This app can be found in the file: (app.py)['SurfsUp/app.py']
+In this section a Flask API was designed based on the previous queries in section 1. This app can be found in the file: [app.py](SurfsUp/app.py)
 
 Four routes were created for this API, with the following content:
 
