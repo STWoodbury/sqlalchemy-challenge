@@ -1,7 +1,7 @@
 # SQLALCHEMY Challenge
 
 ## Overview
-This repository examines climate data from measurement stations around Hawaii. It utilizes sqlalchemy and sqlite to analyze the data from the database [Hawaii.sqlite]("SurfsUp/Resources/hawaii.sqlite"). It then takes the data, and creates an API with Flask to serve various queries to the end user.  
+This repository examines climate data from measurement stations around Hawaii. It utilizes sqlalchemy and sqlite to analyze the data from the database [hawaii.sqlite](SurfsUp/Resources/hawaii.sqlite). It then takes the data, and creates an API with Flask to serve various queries to the end user.  
 
 This database contains two tables:
 
