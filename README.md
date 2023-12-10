@@ -12,7 +12,7 @@ This database contains two tables:
 
 ## Part 1 -- Climate and Station Analysis:
 
-This section uses SqlAlchemy to analyze the above database. The code can be found in the file: (climate_analysis)['SurfsUp/climate_analysis.ipynb].
+This section uses SqlAlchemy to analyze the above database. The code can be found in the file: (climate_analysis)["SurfsUp/climate_analysis.ipynb"].
 
 ### Climate Data Analysis
 
@@ -28,7 +28,6 @@ This precipitation data was then converted to a pandas dataframe, and charted. T
 This dataframe was also summarized in the following table:
 
 <div>
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -72,3 +71,37 @@ This dataframe was also summarized in the following table:
   </tbody>
 </table>
 </div>
+
+### Exploratory Station Analysis
+
+The following questions were queried from the database to examine the individual measurement stations:
+
+<ol>
+    <li>How many stations are in the dataset? <i>(9)</i></li>
+    <li>How many measureents came from each station?</li>
+    <li>Which station had the most measurements? <i>USC00519281</i></li>
+</ol>
+
+Based on the most active station from the above query, the following queries were executed:
+
+<ol>
+    <li>What are the Minimum, Maximum, and Average Temperatures from this measurement station?<i>(53.0F, 87.0F, 71.7F)</i></li>
+    <li>What are the temperatures for the most recent 12 months?</li>
+</ol>
+
+A histogram was then created from the 12 month temperature data. This histogram can be found in the (temp_distribution)['SurfsUp/visualizations/temp_distribution.png'] file.
+
+## Part 2: Climate App
+
+In this section a Flask API was designed based on the previous queries in section 1. This app can be found in the file: (app.py)['SurfsUp/app.py']
+
+Four routes were created for this API, with the following content:
+
+<ol>
+<li>"/" : returns a list all the available routes</li>
+<li>"/api/v1.0/precipitation": returns a jasonified dictionary of query results from the precipitation analysis</li>
+<li>"/api/v1.0/stations": returns a JSON list of stations from the dataset</li>
+<li>"/api/v1.0/tobs": returns the temperature observations of the most-active station for the previous year of data.
+<li>"/api/v1.0/<start>": returns a JSON list of the minimum temperature, the average temperature, and the maximum temperature beginning at a specified 
+<li>"api/v1.0/<start>/<end>": returns a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start-end range.</li>
+</ol>
